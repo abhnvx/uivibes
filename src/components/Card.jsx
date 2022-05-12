@@ -23,9 +23,9 @@ class Card extends Component {
 
 
     render() { 
-        return (<main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 justify-center pb-20">
-        <div class="grid grid-cols-3 gap-4 p-5">
-            
+        return (
+        <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 justify-center pb-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:p-5">
                 {this.state.websites.map(website => <WebsiteCard {...website.fields} /> )}
             </div>
         </main>
