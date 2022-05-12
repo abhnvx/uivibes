@@ -2,8 +2,11 @@ import React, { PureComponent } from "react";
 
 function Card() {
   return (
-    <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 flex flex-row justify-center pb-20">
-      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 justify-center pb-20">
+    <div class="grid grid-flow-row auto-rows-max">
+        <div class="grid grid-flow-col auto-cols-3">
+
+        <div class="max-w-sm rounded overflow-hidden shadow-lg ml-4">
         <img
           class="w-full"
           src="https://images.unsplash.com/photo-1649859397268-251f729c4e09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
@@ -57,6 +60,7 @@ function Card() {
         </div>
       </div>
 
+
       <div class="max-w-sm rounded overflow-hidden shadow-lg ml-4">
         <img
           class="w-full"
@@ -83,7 +87,12 @@ function Card() {
           </span>
         </div>
       </div>
+
+        </div>
+    </div>
+
     </main>
+
   );
 }
 
